@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.roulette-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        #000000 0deg 9.73deg,
+        #ff0000 9.73deg 19.46deg,
+        #000000 19.46deg 29.19deg,
+        #ff0000 29.19deg 38.92deg,
+        #000000 38.92deg 48.65deg,
+        #ff0000 48.65deg 58.38deg,
+        #000000 58.38deg 68.11deg,
+        #ff0000 68.11deg 77.84deg,
+        #000000 77.84deg 87.57deg,
+        #ff0000 87.57deg 97.30deg,
+        #000000 97.30deg 107.03deg,
+        #ff0000 107.03deg 116.76deg,
+        #000000 116.76deg 126.49deg,
+        #ff0000 126.49deg 136.22deg,
+        #000000 136.22deg 145.95deg,
+        #ff0000 145.95deg 155.68deg,
+        #000000 155.68deg 165.41deg,
+        #ff0000 165.41deg 175.14deg,
+        #000000 175.14deg 184.86deg,
+        #ff0000 184.86deg 194.59deg,
+        #000000 194.59deg 204.32deg,
+        #ff0000 204.32deg 214.05deg,
+        #000000 214.05deg 223.78deg,
+        #ff0000 223.78deg 233.51deg,
+        #000000 233.51deg 243.24deg,
+        #ff0000 243.24deg 252.97deg,
+        #000000 252.97deg 262.70deg,
+        #ff0000 262.70deg 272.43deg,
+        #000000 272.43deg 282.16deg,
+        #ff0000 282.16deg 291.89deg,
+        #000000 291.89deg 301.62deg,
+        #ff0000 301.62deg 311.35deg,
+        #000000 311.35deg 321.08deg,
+        #ff0000 321.08deg 330.81deg,
+        #000000 330.81deg 340.54deg,
+        #ff0000 340.54deg 350.27deg,
+        #008000 350.27deg 360deg
+    );
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 5s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
